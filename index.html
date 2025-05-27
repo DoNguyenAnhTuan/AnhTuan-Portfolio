@@ -53,7 +53,7 @@
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span>Hiển thị thông tin</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -841,7 +841,7 @@
 
             <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-value" data-selecct-value>Chọn danh mục</div>
 
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
@@ -852,19 +852,21 @@
             <ul class="select-list">
 
               <li class="select-item">
-                <button data-select-item>All</button>
+                <button data-select-item="all">Tất cả</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Machine Learning & Trí tuệ nhân tạo</button>
+                <button data-select-item="Machine_Learning">Machine Learning & Trí tuệ nhân tạo</button>
               </li>
 
               <li class="select-item">
-                <button data-select-item>Applications</button>
+                <button data-select-item = "python" >Python</button>
               </li>
-
               <li class="select-item">
-                <button data-select-item>Web development</button>
+                <button data-select-item = "arduino-iot">Applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="html-css">Web development</button>
               </li>
 
             </ul>
@@ -874,7 +876,7 @@
           <ul class="project-list">
             
             <!-- Machine Learning & Trí tuệ nhân tạo -->
-            <li class="project-item active" data-filter-item data-category="capstone">
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -886,7 +888,7 @@
                 <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
               </a>
             </li>
-            <li class="project-item active" data-filter-item data-category="capstone">
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -898,7 +900,7 @@
                 <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
               </a>
             </li>
-            <li class="project-item active" data-filter-item data-category="capstone">
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -910,7 +912,7 @@
                 <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
               </a>
             </li>
-            <li class="project-item active" data-filter-item data-category="capstone">
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -922,7 +924,7 @@
                 <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
               </a>
             </li>
-            <li class="project-item active" data-filter-item data-category="capstone">
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -934,7 +936,7 @@
                 <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
               </a>
             </li>
-            <li class="project-item active" data-filter-item data-category="capstone">
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
               <a href="#">
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -1249,7 +1251,7 @@
             </li> -->
             
           </ul>
-
+          <div class="pagination" id="pagination"></div>
         </section>
 
       </article>

@@ -1776,7 +1776,7 @@ textarea.form-input::-webkit-resizer { display: none; }
             
                 
       .skills-list li {
-        padding-left: 45%;
+        padding-left: 0 !important;
       }
   
     }
@@ -2232,4 +2232,58 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: bold;
   margin-top: 30px;
   color: #ffffff; /* Màu trắng */
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0;
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: auto;
+  text-align: center;
+}
+
+.skill-card img {
+  max-width: 60px;
+  height: auto;
+}
+
+.tooltip {
+  background: transparent !important; /* Xóa nền trắng */
+  color: white !important; /* Chữ trắng cho dễ nhìn */
+  text-align: center;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.page-btn {
+  background: var(--eerie-black-2);
+  color: white;
+  border: 1px solid var(--jet);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: var(--fs-6);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.page-btn.active,
+.page-btn:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
 }

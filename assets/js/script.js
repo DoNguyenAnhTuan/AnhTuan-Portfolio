@@ -66,12 +66,10 @@ select.addEventListener("click", function () { elementToggleFunc(this); });
 // add event in all select items
 for (let i = 0; i < selectItems.length; i++) {
   selectItems[i].addEventListener("click", function () {
-
-    let selectedValue = this.innerText.toLowerCase();
+    let selectedValue = this.dataset.selectItem; 
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
-    filterFunc(selectedValue);
-
+    filterFunc(selectedValue); 
   });
 }
 
@@ -79,20 +77,31 @@ for (let i = 0; i < selectItems.length; i++) {
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
 const filterFunc = function (selectedValue) {
-
   for (let i = 0; i < filterItems.length; i++) {
+    const category = filterItems[i].dataset.category;
 
+    // Mặc định ẩn tất cả trước
+    filterItems[i].classList.remove("active");
+
+    // nếu là all => hiển thị lại tất cả
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
     }
 
-  }
+    // nếu là nhóm python
+    else if (
+      selectedValue === "python" &&
+      (category === "python-turtle" || category === "python-tkinter" || category === "python-pygame")
+    ) {
+      filterItems[i].classList.add("active");
+    }
 
-}
+    // nếu là 1 category cụ thể
+    else if (selectedValue === category) {
+      filterItems[i].classList.add("active");
+    }
+  }
+};
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
@@ -172,4 +181,86 @@ for (let i = 0; i < toggleBtns.length; i++) {
     elemToggleFunc(skillsBox);
 
   });
+}
+
+const itemsPerPage = 9;
+const projectList = document.querySelectorAll(".project-item");
+const pagination = document.getElementById("pagination");
+
+let currentPage = 1;
+
+function renderProjects(page) {
+  const start = (page - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+
+  projectList.forEach((item, index) => {
+    // chỉ hiển thị item có class active (được lọc)
+    if (!item.classList.contains("active")) {
+      item.style.display = "none";
+      return;
+    }
+
+    if (index >= start && index < end) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+function renderPagination() {
+  pagination.innerHTML = "";
+
+  const visibleItems = Array.from(projectList).filter(item => item.classList.contains("active"));
+  const pageCount = Math.ceil(visibleItems.length / itemsPerPage);
+
+  for (let i = 1; i <= pageCount; i++) {
+    const btn = document.createElement("button");
+    btn.className = "page-btn";
+    btn.innerText = i;
+    if (i === currentPage) btn.classList.add("active");
+
+    btn.addEventListener("click", () => {
+      currentPage = i;
+      renderProjects(currentPage);
+      renderPagination();
+    });
+
+    pagination.appendChild(btn);
+  }
+}
+
+// Gọi hàm mỗi khi filter
+function refreshPagination() {
+  currentPage = 1;
+  renderProjects(currentPage);
+  renderPagination();
+}
+
+// Gọi lần đầu
+refreshPagination();
+
+// Gọi lại khi lọc
+// Thêm dòng này cuối filterFunc:
+filterFunc = function (selectedValue) {
+  for (let i = 0; i < filterItems.length; i++) {
+    const category = filterItems[i].dataset.category;
+
+    if (selectedValue === "all") {
+      filterItems[i].classList.add("active");
+    }
+    else if (
+      selectedValue === "python" &&
+      (category === "python-turtle" || category === "python-tkinter" || category === "python-pygame")
+    ) {
+      filterItems[i].classList.add("active");
+    }
+    else if (selectedValue === category) {
+      filterItems[i].classList.add("active");
+    } else {
+      filterItems[i].classList.remove("active");
+    }
+  }
+
+  refreshPagination(); // <-- thêm dòng này
 }
