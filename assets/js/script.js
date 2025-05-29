@@ -58,7 +58,7 @@ overlay.addEventListener("click", testimonialsModalFunc);
 // custom select variables
 const select = document.querySelector("[data-select]");
 const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
+const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
 select.addEventListener("click", function () { elementToggleFunc(this); });
@@ -69,26 +69,31 @@ for (let i = 0; i < selectItems.length; i++) {
     let selectedValue = this.dataset.selectItem; 
     selectValue.innerText = this.innerText;
     elementToggleFunc(select);
-    filterFunc(selectedValue); 
+    filterFunc(selectedValue);
   });
 }
 
 // filter variables
 const filterItems = document.querySelectorAll("[data-filter-item]");
 
-const filterFunc = function (selectedValue) {
+function refreshPagination() {
+  currentPage = 1;
+  renderProjects(currentPage);
+  renderPagination();
+}
+
+let filterFunc = function (selectedValue) {
   for (let i = 0; i < filterItems.length; i++) {
     const category = filterItems[i].dataset.category;
 
-    // Mặc định ẩn tất cả trước
+    // Ẩn tất cả trước
     filterItems[i].classList.remove("active");
 
-    // nếu là all => hiển thị lại tất cả
     if (selectedValue === "all") {
       filterItems[i].classList.add("active");
     }
 
-    // nếu là nhóm python
+    // nhóm Python (gồm 3 category con)
     else if (
       selectedValue === "python" &&
       (category === "python-turtle" || category === "python-tkinter" || category === "python-pygame")
@@ -96,12 +101,24 @@ const filterFunc = function (selectedValue) {
       filterItems[i].classList.add("active");
     }
 
-    // nếu là 1 category cụ thể
+    // nhóm Arduino (gồm 2 category con)
+    else if (
+      selectedValue === "arduino" &&
+      (category === "arduino" || category === "arduino-iot")
+    ) {
+      filterItems[i].classList.add("active");
+    }
+
+    // các nhóm đơn khác
     else if (selectedValue === category) {
       filterItems[i].classList.add("active");
     }
   }
+
+  refreshPagination();
 };
+
+
 
 // add event in all filter button items for large screen
 let lastClickedBtn = filterBtn[0];
@@ -240,27 +257,3 @@ function refreshPagination() {
 // Gọi lần đầu
 refreshPagination();
 
-// Gọi lại khi lọc
-// Thêm dòng này cuối filterFunc:
-filterFunc = function (selectedValue) {
-  for (let i = 0; i < filterItems.length; i++) {
-    const category = filterItems[i].dataset.category;
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    }
-    else if (
-      selectedValue === "python" &&
-      (category === "python-turtle" || category === "python-tkinter" || category === "python-pygame")
-    ) {
-      filterItems[i].classList.add("active");
-    }
-    else if (selectedValue === category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-  }
-
-  refreshPagination(); // <-- thêm dòng này
-}

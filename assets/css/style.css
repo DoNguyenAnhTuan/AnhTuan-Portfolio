@@ -352,34 +352,27 @@ main {
 }
 
 .info_more-btn {
-  position: absolute;
-  top: -15px;
-  right: -15px;
-  border-radius: 0 15px;
-  font-size: 13px;
-  color: var(--orange-yellow-crayola);
-  background: var(--border-gradient-onyx);
-  padding: 10px;
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-1);
-  z-index: 1;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #facc15;
+  color: black;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
-.info_more-btn::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  border-radius: inherit;
-  background: var(--bg-gradient-jet);
-  transition: var(--transition-1);
-  z-index: -1;
+.info_more-btn:hover {
+  background-color: #fde047; /* sáng hơn khi hover */
 }
 
-.info_more-btn:hover,
-.info_more-btn:focus { background: var(--bg-gradient-yellow-1); }
-
-.info_more-btn:hover::before,
-.info_more-btn:focus::before { background: var(--bg-gradient-yellow-2); }
+.info_more-btn:focus,
+.info_more-btn:active {
+  background-color: #eab308; /* vẫn vàng khi nhấn */
+  color: black;
+  transform: scale(0.98); /* tạo cảm giác nhấn */
+}
 
 .info_more-btn span { display: none; }
 
@@ -483,6 +476,22 @@ main {
 .navbar-link:focus { color: var(--light-gray-70); }
 
 .navbar-link.active { color: var(--orange-yellow-crayola); }
+@media (max-width: 768px) {
+  .navbar-link {
+    border: 1px solid var(--orange-yellow-crayola);
+    border-radius: 20px;
+    padding: 8px 16px;
+    margin: 5px;
+    font-size: 0.9rem;
+    background-color: transparent;
+  }
+
+  .navbar-link.active {
+    background-color: var(--orange-yellow-crayola);
+    color: black;
+  }
+}
+
 
 
 
