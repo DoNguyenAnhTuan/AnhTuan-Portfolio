@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+  <title>Anh Tuấn | AI & Web Developer Portfolio"</title>
+ <link rel="icon" href="assets/images/favicon.ico">
+
+  <!--
+    - favicon
+  -->
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Đỗ Nguyễn Anh Tuấn" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Đỗ Nguyễn Anh Tuấn">Đỗ Nguyễn Anh Tuấn</h1>
+
+          <p class="title">Thạc sĩ công nghệ thông tin</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Hiển thị thông tin</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:tuan.do@eiu.edu.vn" class="contact-link">tuan.do@eiu.edu.vn</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Số điện thoại</p>
+
+              <a href="tel:++916399121342" class="contact-link">+84 392969357</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ngày sinh</p>
+
+              <time datetime="2004-01-13">04/09/1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Địa chỉ</p>
+
+              <address>Bình Chuẩn, Thuận An, Bình Dương</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+          <li class="social-item">
+            <a href="https://www.facebook.com/AnhTuan4999?locale=vi_VN" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/DoNguyenAnhTuan" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://replit.com/@AnhTuan38" class="social-link">
+              <ion-icon name="code-slash-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Giới thiệu</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Sơ yếu lý lịch</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Dự án</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Liên hệ</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <head>
+          <h2 class="h2 article-title">Về bản thân tôi</h2>
+        </head>
+        <section class="about-text">
+          <div class="Parent">
+            <div class="child child1">
+              <img src="assets/images/Profile_Photo.jpg" style="width:400px; height:600px; border-radius: 50%; margin-left: 30px;" alt="gaurav">
+            </div>
+            <div class="child">
+              <p>
+                Tôi là một kỹ sư phần mềm có kinh nghiệm trong lĩnh vực Trí tuệ nhân tạo và Khoa học dữ liệu, với khả năng lập trình mạnh mẽ bằng Python và làm việc với nhiều công nghệ từ web đến hệ nhúng.
+              </p>
+              <br>
+              <p>
+                Tôi từng tham gia các dự án thực tế như xử lý ảnh với YOLO, phát triển game với Roblox Studio, code Minecraft, sử dụng React và TypeScript. Tôi cũng có kinh nghiệm giảng dạy STEM, hiện đang công tác tại Đại học Quốc tế Miền Đông và học cao học tại Đại học Lạc Hồng.
+              </p>
+              
+          </div>
+          
+          </div>
+          
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Tôi đang làm gì</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning & Trí tuệ nhân tạo (AI)</h4>
+
+                <p class="service-item-text">
+                  Đang nghiên cứu chuyên sâu các kỹ thuật AI như Machine Learning, NLP, Object Detection, YOLO, và đào tạo mô hình bằng Python. Có kinh nghiệm xử lý ngôn ngữ, hình ảnh và phân tích dữ liệu lớn.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Phát triển Web hiện đại</h4>
+
+                <p class="service-item-text">
+                  Xây dựng web ứng dụng bằng TypeScript, JavaScript, React, kết hợp kiến thức UI/UX và hệ thống quản lý học tập như Moodle và WordPress. Yêu thích tối ưu trải nghiệm người dùng và kiến trúc web hiện đại.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Arduino, IoT & Điện tử tự động hóa</h4>
+
+                <p class="service-item-text">
+                  Tham gia thiết kế và thực hành với các dự án sử dụng Arduino, Raspberry Pi, cảm biến và thiết bị IoT. Từng giảng dạy và xây dựng mô hình hệ thống điều khiển, nhà thông minh, và các ứng dụng STEM thực tế.
+                </p>
+              </div>
+
+            </li>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="machine learning icon" width="40">
+              </div>
+            
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Giảng dạy STEM</h4>
+            
+                <p class="service-item-text">
+                  Dạy STEM và lập trình cho trẻ em với các công cụ như Tinkercad, Scratch, App Inventor, và các ngôn ngữ lập trình trực quan. Thiết kế hoạt động học tập giúp các em phát triển tư duy thuật toán và sáng tạo công nghệ.
+                </p>
+              </div>
+            
+            </li>
+            
+
+
+          </ul>
+
+        </section>
+
+ <section class="tools" style="margin-top:100px">
+  <h3 class="h3 service-title">Các kỹ năng</h3>
+  <div class="skills-box" data-skills-box>
+
+    <!-- Kỹ năng lập trình / CNTT -->
+    <h4 class="skill-group-title">Chuyên nghành CNTT</h4>
+    <ul class="skills-list">
+      <li><div class="skill-card"><div class="tooltip">C</div><div class="card-icon"><img src="./assets/images/C.png" style="width:50px" alt="C logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">C++</div><div class="card-icon"><img src="./assets/images/C++.png" style="width:50px" alt="C++ logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Python</div><div class="card-icon"><img src="./assets/images/python.png" style="width:50px" alt="Python logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">HTML5</div><div class="card-icon"><img src="./assets/images/html5.png" alt="HTML5 logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">CSS3</div><div class="card-icon"><img src="./assets/images/css3.png" alt="CSS3 logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">JavaScript</div><div class="card-icon"><img src="./assets/images/javascript.png" alt="JavaScript logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Bootstrap</div><div class="card-icon"><img src="./assets/images/bootstrap.png" alt="Bootstrap logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">React</div><div class="card-icon"><img src="./assets/images/react.png" alt="React logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">TypeScript</div><div class="card-icon"><img src="./assets/images/TypeScript.png" style="width:50px" alt="TypeScript logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Yolo</div><div class="card-icon"><img src="./assets/images/yolo.png" style="width:90px" alt="Yolo logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Arduino</div><div class="card-icon"><img src="./assets/images/arduino.png" style="width:50px" alt="Arduino logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Moodle</div><div class="card-icon"><img src="./assets/images/Moodle.png" style="width:70px"alt="Moodle logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Wordpress</div><div class="card-icon"><img src="./assets/images/wordpress.png" style="width:90px"alt="Wordpress logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Unity</div><div class="card-icon"><img src="./assets/images/Unity.png" style="width:90px" alt="Unity logo"></div></div></li>
+    </ul>
+
+    <!-- Kỹ năng STEM / Công nghệ 3D -->
+    <h4 class="skill-group-title">Giảng dạy STEAM</h4>
+    <ul class="skills-list">
+      <li><div class="skill-card"><div class="tooltip">Roblox Studio</div><div class="card-icon"><img src="./assets/images/robloxstudio.png"  style="width:40px" alt="Roblox logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Minecraft Studio</div><div class="card-icon"><img src="./assets/images/minecraft.png" style="width:100px"  alt="Minecraft logo"></div></div></li>
+      <!-- <li><div class="skill-card"><div class="tooltip">Unity</div><div class="card-icon"><img src="./assets/images/unity.png" alt="Unity logo"></div></div></li> -->
+      <li><div class="skill-card"><div class="tooltip">Tinkercad</div><div class="card-icon"><img src="./assets/images/tinkercad.png" style="width:90px" alt="tinkercad logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">WeDo</div><div class="card-icon"><img src="./assets/images/wedo.png" style="width:60px" alt="WeDo logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Mindstorms</div><div class="card-icon"><img src="./assets/images/Mindstorms.png" style="width:60px" alt="Mindstorms logo"></div></div></li>
+    </ul>
+
+    <!-- Kỹ năng mềm / Đa phương tiện -->
+    <h4 class="skill-group-title">Kỹ năng mềm</h4>
+    <ul class="skills-list">
+      <li><div class="skill-card"><div class="tooltip">Photoshop</div><div class="card-icon"><img src="./assets/images/photoshop.png" alt="Photoshop logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Canva</div><div class="card-icon"><img src="./assets/images/canva.png" style="width:60px"  alt="Canva logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Premiere</div><div class="card-icon"><img src="./assets/images/Premiere.png" style="width:60px"alt="Adobe Premiere logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">Filmora</div><div class="card-icon"><img src="./assets/images/Filmora.png" style="width:60px"alt="Filmora logo"></div></div></li>
+      <li><div class="skill-card"><div class="tooltip">CapCut</div><div class="card-icon"><img src="./assets/images/capcut.png" style="width:60px"alt="CapCut logo"></div></div></li>
+    </ul>
+
+  </div>
+</section>
+
+
+        <section class="tools" style="margin-top:100px">
+        
+          <h3 class="h3 service-title">Công cụ khác</h3>
+          <div class="skills-box" data-skills-box>
+        
+            <ul class="skills-list">
+            
+            
+        
+            
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Git</div>
+            
+                  <div class="card-icon">
+                    <img src="./assets/images/git.png" alt="Git logo">
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Npm</div>
+            
+                  <div class="card-icon">
+                    <img src="./assets/images/npm.png" alt="Npm logo">
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Command Line</div>
+            
+                  <div class="card-icon">
+                    <img src="./assets/images/command.png" alt="Command Line logo">
+                  </div>
+                </div>
+              </li>
+            
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">VS Code</div>
+            
+                  <div class="card-icon">
+                    <img src="./assets/images/vs-code.png" alt="VS Code logo">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">My SQL</div>
+            
+                  <div class="card-icon">
+                    <img src="./assets/images/MySQL.png" style="width:50px"alt="VS Code logo">
+                  </div>
+                </div>
+              </li>   
+            </ul>
+        
+        
+          </div>
+        
+        </section>
+
+      
+
+
+        
+        
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Sơ yếu lý lịch</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Giáo dục</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Thạc sĩ Công nghệ thông tin – Đại học Lạc Hồng  </h4>
+
+              <span>01/2024 - 12/2025 </span>
+
+              <p class="timeline-text">
+                Đang theo học Thạc sĩ Công nghệ thông tin tại Đại học Lạc Hồng, chuyên sâu về Trí tuệ Nhân tạo.Tập trung nghiên cứu và thực hành các lĩnh vực hiện đại như:
+                Xử lý ngôn ngữ tự nhiên, Phân tích dữ liệu và dữ liệu lớn, Học máy, Xử lý ảnh, Khai thác dữ liệu, Cùng các nền tảng toán học và logic như Lý thuyết đồ thị, Tối ưu tổ hợp, Logic mờ, Phương pháp toán học tính toán, Thống kê ứng dụng,
+            </p>
+            
+
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tốt nghiệp đại học chuyên nghành Kỹ sư phần mềm - Đại học Lạc Hồng</h4>
+            
+              <span>09/2017 - 10/2022</span>
+            
+              <p class="timeline-text">
+                Tốt nghiệp tại trường Đại học Lạc Hồng với chuyên ngành Kỹ thuật phần mềm. 
+                Trong thời gian học tập, tôi đã tích cực tham gia vào nhiều dự án thực tế và nghiên cứu khoa học, giúp tôi phát triển kỹ năng lập trình và khả năng làm việc nhóm.
+              </p>
+            
+            </li>
+            
+            <li class="timeline-item">
+            
+              <h4 class="h4 timeline-item-title">Tốt nghiệp cấp 3 trường THPT Tân Phước Khánh</h4>
+            
+              <span>2014 — 2016</span>
+            
+              <p class="timeline-text">
+                Hoàn thành chương trình học tại trường THPT Tân Phước Khánh, nơi tôi đã phát triển nền tảng kiến thức vững chắc và đam mê với công nghệ.
+              </p>
+            
+            </li>
+            
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+        
+            <h3 class="h3">Kinh nghiệm</h3>
+          </div>
+          
+          <ol class="timeline-list">
+            
+          <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">FabLab - Trường Đại học Quốc tế Miền Đông</h4>
+              <span> 09/2023- nay</span>
+              <p class="timeline-text">
+              
+                - Hướng dẫn học sinh thực hành các dự án sinh viên <br>
+                - Hỗ trợ sinh viên trong các hoạt động nghiên cứu và phát triển sản phẩm<br>
+                - Tổ chức các buổi workshop cho sinh viên <br>
+                - Tổ chức cuộc thi Drone, xe dò line cho sinh viên <br>
+                - Nghiên cứu và phát triển các sản phẩm IoT <br>
+                  - Giảng dạy STEM, lập trình cho trẻ em và thanh thiếu niên. <br>
+                <!-- <a href="https://skillwallet.smartinternz.com/certificate/virtual-internship/840c3eda3ea42ecd90aeb3434f3510b7" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">[Link]</a> -->
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Chuyên viên cơ hữu - Học viện sáng tạo Teky Holding</h4>
+              <span>02/2022 - 09/2023</span>
+              <p class="timeline-text">
+                - Giảng dạy STEM các bộ môn lập trình như Python, Wordpress, Moodle, HTML, CSS, PHP, Java, Unity, App Inventor, Scratch,... <br>
+                - Dạy về điện tử và tự động hóa (Arduino, Raspberry Pi, Lego,...) <br>
+                - Giảng dạy truyền thông đa phương tiện: Tinkercad, Photoshop,...<br>
+                - Tổ chức ngày hội trải nghiệm công nghệ, workshop cho học sinh và phụ huynh.<br>
+                <!-- <a href="https://skillwallet.smartinternz.com/internships/salesforce_certificates/fb3a30a2e3e8abdcbf63f0aaaadb06e4" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">[Link]</a> -->
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Lập trình viên - Công Ty TNHH Giải Pháp Công Nghệ ThoMi</h4>
+              <span>11/2021 - 02/2022</span>
+              <p class="timeline-text">
+                - Lập trình với PHP, làm việc trên hệ thống LMS Moodle và website WordPress.<br>
+                - Thiết kế và phát triển theme, plugin (block, activity, local,...).<br>
+                - Làm việc với cơ sở dữ liệu MySQL và các hệ quản trị dữ liệu quan hệ khác.<br>
+                <!-- <a href="https://www.udemy.com/certificate/UC-dd3f5174-10ed-4cf0-8fde-ca87bdad8f64/" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">[Link]</a> -->
+              </p>
+            </li>
+        
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Thực tập sinh - CÔNG TY TNHH tin học MAI PHƯƠNG</h4>
+              <span>08/2021 - 11/2021</span>
+              <p class="timeline-text">
+                - Học và thực hành về SEO, viết bài đánh giá sản phẩm công nghệ. <br>
+                - Sử dụng WordPress kết hợp các công cụ RankMath hoặc Yoast SEO để tối ưu bài viết chuẩn SEO. <br>
+                <!-- <a href="https://drive.google.com/file/d/1tBaQv9Lt9MfU61taCPCx8kL7g7WCVdD7/view?usp=drivesdk" target="_blank" style="color: #007bff; text-decoration: none; font-weight: bold;">[Link]</a> -->
+              </p>
+            </li>
+        
+          </ol> 
+        
+        </section>
+        
+
+        
+      </article>
+      <!--        - #PORTFOLIO      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Dự án cá nhân</h2>
+        </header>
+
+        <section class="projects">
+
+        
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Chọn danh mục</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item="all">Tất cả</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="Machine_Learning">Machine Learning & Trí tuệ nhân tạo</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item = "python" >Python</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="arduino">Applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item="html-css">Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+            
+            <!-- Machine Learning & Trí tuệ nhân tạo -->
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
+              <a href="https://github.com/DoNguyenAnhTuan/SentimentClassification.git">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Sentiment Analysis in Education" loading="lazy">
+                </figure>
+                <h3 class="project-title">Phân tích cảm xúc trong giáo dục (NLP)</h3>
+                <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="YOLO Card Sorting" loading="lazy">
+                </figure>
+                <h3 class="project-title">Nhận diện và xếp bài binh xập xám (YOLOv5s)</h3>
+                <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Fuzzy Logic House Price Prediction" loading="lazy">
+                </figure>
+                <h3 class="project-title">Dự đoán giá căn hộ (Fuzzy Logic)</h3>
+                <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Golf Behavior Prediction" loading="lazy">
+                </figure>
+                <h3 class="project-title">Dự đoán hành vi chơi golf (Bernoulli Naive Bayes)</h3>
+                <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Graphical Method LP" loading="lazy">
+                </figure>
+                <h3 class="project-title">Tối ưu tổ hợp – Graphical method for LP</h3>
+                <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="Machine_Learning">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Document Scanner" loading="lazy">
+                </figure>
+                <h3 class="project-title">Document Scanner – Skeletonization & Hough Transform</h3>
+                <p class="project-category">Machine Learning & Trí tuệ nhân tạo</p>
+              </a>
+            </li>
+
+            <!-- Python -->
+            
+            <li class="project-item active" data-filter-item data-category="python-turtle">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Lucky Wheel Game" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trò chiến nón kỳ diệu</h3>
+                <p class="project-category">Python</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="python-turtle">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Spaceship Shooting Game" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trò chơi bắn phi thuyền</h3>
+                <p class="project-category">Python – Turtle</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="python-turtle">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Turtle Drawing" loading="lazy">
+                </figure>
+                <h3 class="project-title">Web vẽ hình</h3>
+                <p class="project-category">Python – Turtle</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="python-turtle">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Draw House" loading="lazy">
+                </figure>
+                <h3 class="project-title">Web vẽ hình nâng cấp</h3>
+                <p class="project-category">Python – Turtle</p>
+              </a>
+            </li>
+
+            <!-- 🖼 Python – Tkinter -->
+            <li class="project-item active" data-filter-item data-category="python-tkinter">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Calculator" loading="lazy">
+                </figure>
+                <h3 class="project-title">Ứng dụng Calculator</h3>
+                <p class="project-category">Python – Tkinter</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="python-tkinter">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Currency Converter" loading="lazy">
+                </figure>
+                <h3 class="project-title">Currency Converter</h3>
+                <p class="project-category">Python – Tkinter</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="python-tkinter">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Color Guessing Game" loading="lazy">
+                </figure>
+                <h3 class="project-title">Ứng dụng đoán màu</h3>
+                <p class="project-category">Python – Tkinter</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="python-tkinter">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Rock Paper Scissors" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trò chơi Kéo búa bao</h3>
+                <p class="project-category">Python – Tkinter</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="python-tkinter">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Multiple Choice Quiz" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trò chơi ai là triệu phú</h3>
+                <p class="project-category">Python – Tkinter</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="python-tkinter">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Tic-Tac-Toe" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trò chơi Tic-Tac-Toe</h3>
+                <p class="project-category">Python – Tkinter</p>
+              </a>
+            </li>         
+            
+          <!-- 🎮 Python – Pygame -->
+            <li class="project-item active" data-filter-item data-category="python-pygame">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Mario-style Platformer Game" loading="lazy">
+                </figure>
+                <h3 class="project-title">Game platformer kiểu Mario</h3>
+                <p class="project-category">Python – Pygame</p>
+              </a>
+            </li>
+
+            <!-- 🌐 HTML & CSS -->
+            <li class="project-item active" data-filter-item data-category="html-css">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Web Pages for Teky" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trang web giới thiệu bản thân (cơ bản, nâng cao, hoàn thiện)</h3>
+                <p class="project-category">HTML & CSS</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="html-css">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Course Introduction Web Pages" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trang web giới thiệu môn học (Phần 1 & 2)</h3>
+                <p class="project-category">HTML & CSS</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="html-css">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Learning Roadmap" loading="lazy">
+                </figure>
+                <h3 class="project-title">Trang web danh sách lộ trình học</h3>
+                <p class="project-category">HTML & CSS</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="html-css">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Content Management" loading="lazy">
+                </figure>
+                <h3 class="project-title">Quản trị bài viết & thanh điều hướng</h3>
+                <p class="project-category">HTML & CSS</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="html-css">
+              <a href="#">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Server Setup" loading="lazy">
+                </figure>
+                <h3 class="project-title">Thiết lập server</h3>
+                <p class="project-category">HTML & CSS</p>
+              </a>
+            </li>            
+            <!-- 📱 Lập trình app -->
+              <li class="project-item active" data-filter-item data-category="app-inventor">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/code.jpg" alt="Pomodoro App" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Pomodoro App</h3>
+                  <p class="project-category">Lập trình app</p>
+                </a>
+              </li>
+              <li class="project-item active" data-filter-item data-category="app-inventor">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/code.jpg" alt="Music App" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">App âm nhạc</h3>
+                  <p class="project-category">Lập trình app</p>
+                </a>
+              </li>
+              <li class="project-item active" data-filter-item data-category="app-inventor">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/code.jpg" alt="Color Palette App" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">App bảng màu</h3>
+                  <p class="project-category">Lập trình app</p>
+                </a>
+              </li>
+              <li class="project-item active" data-filter-item data-category="app-inventor">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/code.jpg" alt="Spaceship Game App" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Game phi thuyền</h3>
+                  <p class="project-category">Lập trình app</p>
+                </a>
+              </li>
+
+              <!-- 🔌 Arduino & IoT -->
+              <li class="project-item active" data-filter-item data-category="arduino">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/code.jpg" alt="WiFi Car Control" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Điều khiển xe qua WiFi</h3>
+                  <p class="project-category">Arduino & IoT</p>
+                </a>
+              </li>
+              <li class="project-item active" data-filter-item data-category="arduino">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/code.jpg" alt="Web Blynk Light Control" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Điều khiển đèn qua Web/Blynk</h3>
+                  <p class="project-category">Arduino & IoT</p>
+                </a>
+              </li>
+              <li class="project-item active" data-filter-item data-category="arduino">
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img src="./assets/images/code.jpg" alt="Voice Controlled Device" loading="lazy">
+                  </figure>
+                  <h3 class="project-title">Điều khiển thiết bị bằng giọng nói</h3>
+                  <p class="project-category">Arduino & IoT</p>
+                </a>
+              </li>
+<!-- 
+            <li class="project-item active" data-filter-item data-category="Path-Finding Visualizer">
+              <a href="https://github.com/ManoharSingh1311/Path-Finding-Visualizer">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/code.jpg" alt="Path-Finding Visualizer" loading="lazy">
+                </figure>
+                <h3 class="project-title">Path-Finding Visualizer</h3>
+                <p class="project-category">Web Development + DSA </p>
+              </a>
+            </li> -->
+            
+          </ul>
+          <div class="pagination" id="pagination"></div>
+        </section>
+
+      </article>
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+            <h2 class="h2 article-title">Liên hệ tôi </h2> 
+        </header>
+        
+        <section class="about-text">
+            <p>
+                Cảm ơn bạn đã quan tâm kết nối với tôi! Cho dù bạn có thắc mắc về các dự án của tôi, quan tâm đến việc hợp tác hay chỉ muốn liên hệ, hãy thoải mái sử dụng bất kỳ phương pháp nào sau đây để liên hệ.
+            </p>
+            <h2 class="h2 article-title">Thông tin liên hệ:</h2>
+            <p><strong>Email:</strong> <a href="mailto:tuan.do@eiu.edu.vn">tuan.do@eiu.edu.vn</a></p>
+            <p><strong>Phone:</strong> </p>+84 392969357</p>
+            <!-- <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/manohar-singh/" style="text-decoration: none; color: #648fa6;">https://www.linkedin.com/in/manohar-singh/</a></p> -->
+            <p><strong>GitHub:</strong> <a href="https://github.com/DoNguyenAnhTuan" style="text-decoration: none; color: #8f6b6b;">https://github.com/DoNguyenAnhTuan</a></p>
+    
+         
+
+            </ul>    
+        </section>    
+    </article>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
